@@ -93,32 +93,15 @@ button:hover {
     background-color: #05afff;
 }
 button[disabled], button[disabled]:hover {
-    /* background-color: #e6e6e6; */
     opacity: 0.25;
     cursor: not-allowed;
 }
-
-.message {
+.help-text {
     line-height: 1.5;
     font-weight: 400;
     color: #8a8a8a;
     margin-top: 16px;
 }
-
-.color-blue { color: #33beff; }
-.color-red { color: #ff423d; }
-.color-yellow { color: #FFC200; }
-.color-white { color: hsl(0, 0%, 100%); }
-.color-lightest-gray { color: hsl(0, 0%, 98%); }
-.color-lighter-gray { color: hsl(0, 0%, 93%); }
-.color-light-gray { color: hsl(0, 0%, 60%); }
-.color-gray { color: hsl(0, 0%, 33%); }
-.color-dark-gray { color: hsl(0, 0%, 20%); }
-.color-darker-gray { color: hsl(0, 0%, 16%); }
-.font-light { font-weight: 200; }
-.font-regular { font-weight: 400; }
-.font-bold { font-weight: 600; }
-
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -139,4 +122,22 @@ input[type="color"]:focus,
 .btn:active:focus {
   box-shadow: none;
   outline: 0 none;
+}
+
+.message {
+    position: fixed; top: 1rem; left: 0; right: 0;
+    text-align: center;
+}
+.message .alert {
+    text-align: left;
+    color: #fff;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 300px;
+}
+.message .alert-danger {
+    background-color: #ff423d;
+}
+.message .alert-success {
+    background-color: #42C75D;
 }
